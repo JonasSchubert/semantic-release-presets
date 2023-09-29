@@ -1,5 +1,5 @@
-import verifyConditions from './verifyConditions.js';
-import success from './success.js';
-import fail from './fail.js';
+import verifyConditions from './verifyConditions.mjs';
+import success from './success.mjs';
+import fail from './fail.mjs';
 
 export default { verifyConditions, success, fail };
