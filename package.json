@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-presets",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Semantic release presets and plugins for various projects.",
   "scripts": {
     "prepare": "is-ci || husky install"
