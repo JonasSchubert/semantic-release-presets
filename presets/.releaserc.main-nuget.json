@@ -1,0 +1,60 @@
+{
+  "branches": [
+    "main"
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/gitlab",
+    [
+      "semantic-release-replace-plugin",
+      {
+        "replacements": [
+          {
+            "files": [
+              "src/*.csproj"
+            ],
+            "from": "<AssemblyVersion>[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}</AssemblyVersion>",
+            "to": "<AssemblyVersion>${nextRelease.version}</AssemblyVersion>"
+          },
+          {
+            "files": [
+              "src/*.csproj"
+            ],
+            "from": "<FileVersion>[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}</FileVersion>",
+            "to": "<FileVersion>${nextRelease.version}</FileVersion>"
+          },
+          {
+            "files": [
+              "src/*.csproj",
+              ".nuspec"
+            ],
+            "from": "<[vV]{1}ersion>[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}</[vV]{1}ersion>",
+            "to": "<Version>${nextRelease.version}</Version>"
+          }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "package.json",
+          "package-lock.json",
+          "CHANGELOG.md",
+          ".nuspec",
+          "src/*.csproj"
+        ],
+        "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+      }
+    ],
+    "semantic-release-presets/plugins/ms-teams"
+  ]
+}

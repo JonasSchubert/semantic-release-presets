@@ -1,0 +1,3 @@
+{
+  "extends": "semantic-release-presets/presets/.releaserc.full.json"
+}

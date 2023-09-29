@@ -1,0 +1,52 @@
+{
+  "branches": [
+    "dev"
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    [
+      "semantic-release-replace-plugin",
+      {
+        "replacements": [
+          {
+            "files": [
+              "swagger.yaml"
+            ],
+            "from": "  version: '?[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}'?",
+            "to": "  version: ${nextRelease.version}",
+            "results": [
+              {
+                "file": "swagger.yaml",
+                "hasChanged": true,
+                "numMatches": 1,
+                "numReplacements": 1
+              }
+            ],
+            "countMatches": true
+          }
+        ]
+      }
+    ],
+    "@semantic-release/gitlab",
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "package.json",
+          "package-lock.json",
+          "CHANGELOG.md",
+          "swagger.yaml"
+        ],
+        "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}

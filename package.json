@@ -1,0 +1,48 @@
+{
+  "name": "semantic-release-presets",
+  "version": "0.0.0",
+  "description": "Semantic release presets and plugins for various projects.",
+  "scripts": {
+    "prepare": "is-ci || husky install"
+  },
+  "files": [
+    "plugins/*",
+    "presets/*"
+  ],
+  "keywords": [
+    "semantic-release",
+    "semantic-release-plugins",
+    "semantic-release-presets",
+    "ms-teams"
+  ],
+  "homepage": "https://github.com/JonasSchubert/semantic-release-presets",
+  "bugs": {
+    "url": "https://github.com/JonasSchubert/semantic-release-presets/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonasSchubert/semantic-release-presets.git"
+  },
+  "author": {
+    "name": "Jonas Schubert",
+    "email": "jonas.schubert.projects@web.de",
+    "url": "https://github.com/JonasSchubert"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "dependencies": {
+    "got": "^11.8.6",
+    "hpagent": "^1.2.0",
+    "url": "^0.11.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
+    "husky": "^8.0.3",
+    "is-ci": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=10.0.0"
+  }
+}
