@@ -1,3 +1,10 @@
+## 1.0.4 (2023-10-01)
+
+
+### Fix
+
+* **ms-teams-plugin:** mark as module ([121de4b](https://github.com/JonasSchubert/semantic-release-presets/commit/121de4b458f9e9cd1cbaa00d336b86fd73f07b7c))
+
 ## 1.0.3 (2023-09-29)
 
 
