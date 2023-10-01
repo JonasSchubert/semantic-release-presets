@@ -31,7 +31,7 @@
   "contributors": [],
   "license": "MIT",
   "dependencies": {
-    "got": "^11.8.6",
+    "got": "^13.0.0",
     "hpagent": "^1.2.0",
     "url": "^0.11.3"
   },

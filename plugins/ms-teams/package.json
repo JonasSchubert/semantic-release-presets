@@ -1,0 +1,13 @@
+{
+  "name": "semantic-release-presets-plugins-ms-teams",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": false,
+  "exports": "./index.js",
+  "type": "module",
+  "dependencies": {
+    "got": "^13.0.0",
+    "hpagent": "^1.2.0",
+    "url": "^0.11.3"
+  }
+}
