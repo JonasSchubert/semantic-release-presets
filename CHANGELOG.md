@@ -1,3 +1,15 @@
+## 2.0.0 (2023-10-02)
+
+
+### Feature
+
+* **ms-teams:** allow to disable plugin ([1eb1112](https://github.com/JonasSchubert/semantic-release-presets/commit/1eb11123fe5ac70d7eca0700927b1f88d3dcf5e4))
+* **platforms:** support gitlab and github ([ad3704c](https://github.com/JonasSchubert/semantic-release-presets/commit/ad3704c2b329849e18d564e371f82f74e7546d20))
+
+### Breaking Changes
+
+* **platforms:** move presets to platform specific directories ([ad3704c](https://github.com/JonasSchubert/semantic-release-presets/commit/ad3704c2b329849e18d564e371f82f74e7546d20))
+
 ## 1.0.4 (2023-10-01)
 
 
