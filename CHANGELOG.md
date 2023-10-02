@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/JonasSchubert/semantic-release-presets/compare/v2.0.1...v2.0.2) (2023-10-02)
+
+
+### Bug Fixes
+
+* **ms-teams:** add ignore to prevent node_modules being published ([d712f35](https://github.com/JonasSchubert/semantic-release-presets/commit/d712f3551159373cc63193a87ac3596b806772e3))
+
 ## 2.0.1 (2023-10-02)
 
 
