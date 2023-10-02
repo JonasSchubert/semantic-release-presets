@@ -3,6 +3,8 @@
 🔧 Semantic release presets and plugins for various projects.
 
 > This is not in any way connected or related to the official [semantic-release](https://github.com/semantic-release) group and only maintained by [me](https://github.com/JonasSchubert) and optimized for my usage with Gitlab.
+>
+> From v2 on this project contains definitions for [gitlab](./presets/gitlab/) and [github](./presets/github/). They are identically but targeting the respecting platforms.
 
 ## Usage
 
@@ -31,53 +33,105 @@ Furthermore it was extended with ideas from https://github.com/yllieth/semantic-
 
 Following presets can be used:
 
-### Full
+### GitHub
+
+#### Full
 
 | Name | Description | Category |
 | --- | --- | --- |
-| [.releaserc.full.json](./presets/.releaserc.full.json) | Semantic release configuration with full usage configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `full` |
-| [.releaserc.main-full.json](./presets/.releaserc.main-full.json) | Semantic release configuration with full usage configured to run on main branch | `main`, `full` |
-| [.releaserc.dev-full.json](./presets/.releaserc.dev-full.json) | Semantic release configuration with full usage configured to run on dev branch | `dev`, `full` |
+| [.releaserc.full.json](./presets/github/.releaserc.full.json) | Semantic release configuration with full usage configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `full` |
+| [.releaserc.main-full.json](./presets/github/.releaserc.main-full.json) | Semantic release configuration with full usage configured to run on main branch | `main`, `full` |
+| [.releaserc.dev-full.json](./presets/github/.releaserc.dev-full.json) | Semantic release configuration with full usage configured to run on dev branch | `dev`, `full` |
 
-### No NPM publish (Node)
-
-| Name | Description | Category |
-| --- | --- | --- |
-| [.releaserc.noNpmPublish.json](./presets/.releaserc.noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance` |
-| [.releaserc.main-noNpmPublish.json](./presets/.releaserc.main-noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on main branch | `main` |
-| [.releaserc.dev-noNpmPublish.json](./presets/.releaserc.dev-noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on dev branch | `dev` |
-
-### .NET
+#### No NPM publish (Node)
 
 | Name | Description | Category |
 | --- | --- | --- |
-| [.releaserc.dotnet.json](./presets/.releaserc.dotnet.json) | Semantic release configuration for dotnet configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `dotnet` |
-| [.releaserc.main-dotnet.json](./presets/.releaserc.main-dotnet.json) | Semantic release configuration for dotnet configured to run on main branch | `main`, `dotnet` |
-| [.releaserc.dev-dotnet.json](./presets/.releaserc.dev-dotnet.json) | Semantic release configuration for dotnet configured to run on dev branch | `dev`, `dotnet` |
+| [.releaserc.noNpmPublish.json](./presets/github/.releaserc.noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance` |
+| [.releaserc.main-noNpmPublish.json](./presets/github/.releaserc.main-noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on main branch | `main` |
+| [.releaserc.dev-noNpmPublish.json](./presets/github/.releaserc.dev-noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on dev branch | `dev` |
 
-### Nuget
-
-| Name | Description | Category |
-| --- | --- | --- |
-| [.releaserc.nuget.json](./presets/.releaserc.nuget.json) | Semantic release configuration for nuget configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `nuget` |
-| [.releaserc.main-nuget.json](./presets/.releaserc.main-nuget.json) | Semantic release configuration for nuget configured to run on main branch | `main`, `nuget` |
-| [.releaserc.dev-nuget.json](./presets/.releaserc.dev-nuget.json) | Semantic release configuration for nuget configured to run on dev branch | `dev`, `nuget` |
-
-### Python
+#### .NET
 
 | Name | Description | Category |
 | --- | --- | --- |
-| [.releaserc.python.json](./presets/.releaserc.python.json) | Semantic release configuration for python configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `python` |
-| [.releaserc.main-python.json](./presets/.releaserc.main-python.json) | Semantic release configuration for python configured to run on main branch | `main`, `python` |
-| [.releaserc.dev-python.json](./presets/.releaserc.dev-python.json) | Semantic release configuration for python configured to run on dev branch | `dev`, `python` |
+| [.releaserc.dotnet.json](./presets/github/.releaserc.dotnet.json) | Semantic release configuration for dotnet configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `dotnet` |
+| [.releaserc.main-dotnet.json](./presets/github/.releaserc.main-dotnet.json) | Semantic release configuration for dotnet configured to run on main branch | `main`, `dotnet` |
+| [.releaserc.dev-dotnet.json](./presets/github/.releaserc.dev-dotnet.json) | Semantic release configuration for dotnet configured to run on dev branch | `dev`, `dotnet` |
 
-### Swagger
+#### Nuget
 
 | Name | Description | Category |
 | --- | --- | --- |
-| [.releaserc.swagger.json](./presets/.releaserc.swagger.json) | Semantic release configuration with full usage, but without `npm publish`, configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support. An additional step to update the version in a `swagger.yaml` file (in root) is added | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `swagger` |
-| [.releaserc.main-swagger.json](./presets/.releaserc.main-swagger.json) | Semantic release configuration with full usage, but without `npm publish`, configured to run on main branch. An additional step to update the version in a `swagger.yaml` file (in root) is added | `main`, `swagger` |
-| [.releaserc.dev-swagger.json](./presets/.releaserc.dev-swagger.json) | Semantic release configuration with full usage, but without `npm publish`, configured to run on dev branch. An additional step to update the version in a `swagger.yaml` file (in root) is added | `dev`, `swagger` |
+| [.releaserc.nuget.json](./presets/github/.releaserc.nuget.json) | Semantic release configuration for nuget configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `nuget` |
+| [.releaserc.main-nuget.json](./presets/github/.releaserc.main-nuget.json) | Semantic release configuration for nuget configured to run on main branch | `main`, `nuget` |
+| [.releaserc.dev-nuget.json](./presets/github/.releaserc.dev-nuget.json) | Semantic release configuration for nuget configured to run on dev branch | `dev`, `nuget` |
+
+#### Python
+
+| Name | Description | Category |
+| --- | --- | --- |
+| [.releaserc.python.json](./presets/github/.releaserc.python.json) | Semantic release configuration for python configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `python` |
+| [.releaserc.main-python.json](./presets/github/.releaserc.main-python.json) | Semantic release configuration for python configured to run on main branch | `main`, `python` |
+| [.releaserc.dev-python.json](./presets/github/.releaserc.dev-python.json) | Semantic release configuration for python configured to run on dev branch | `dev`, `python` |
+
+#### Swagger
+
+| Name | Description | Category |
+| --- | --- | --- |
+| [.releaserc.swagger.json](./presets/github/.releaserc.swagger.json) | Semantic release configuration with full usage, but without `npm publish`, configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support. An additional step to update the version in a `swagger.yaml` file (in root) is added | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `swagger` |
+| [.releaserc.main-swagger.json](./presets/github/.releaserc.main-swagger.json) | Semantic release configuration with full usage, but without `npm publish`, configured to run on main branch. An additional step to update the version in a `swagger.yaml` file (in root) is added | `main`, `swagger` |
+| [.releaserc.dev-swagger.json](./presets/github/.releaserc.dev-swagger.json) | Semantic release configuration with full usage, but without `npm publish`, configured to run on dev branch. An additional step to update the version in a `swagger.yaml` file (in root) is added | `dev`, `swagger` |
+
+### Gitlab
+
+#### Full
+
+| Name | Description | Category |
+| --- | --- | --- |
+| [.releaserc.full.json](./presets/gitlab/.releaserc.full.json) | Semantic release configuration with full usage configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `full` |
+| [.releaserc.main-full.json](./presets/gitlab/.releaserc.main-full.json) | Semantic release configuration with full usage configured to run on main branch | `main`, `full` |
+| [.releaserc.dev-full.json](./presets/gitlab/.releaserc.dev-full.json) | Semantic release configuration with full usage configured to run on dev branch | `dev`, `full` |
+
+#### No NPM publish (Node)
+
+| Name | Description | Category |
+| --- | --- | --- |
+| [.releaserc.noNpmPublish.json](./presets/gitlab/.releaserc.noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance` |
+| [.releaserc.main-noNpmPublish.json](./presets/gitlab/.releaserc.main-noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on main branch | `main` |
+| [.releaserc.dev-noNpmPublish.json](./presets/gitlab/.releaserc.dev-noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on dev branch | `dev` |
+
+#### .NET
+
+| Name | Description | Category |
+| --- | --- | --- |
+| [.releaserc.dotnet.json](./presets/gitlab/.releaserc.dotnet.json) | Semantic release configuration for dotnet configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `dotnet` |
+| [.releaserc.main-dotnet.json](./presets/gitlab/.releaserc.main-dotnet.json) | Semantic release configuration for dotnet configured to run on main branch | `main`, `dotnet` |
+| [.releaserc.dev-dotnet.json](./presets/gitlab/.releaserc.dev-dotnet.json) | Semantic release configuration for dotnet configured to run on dev branch | `dev`, `dotnet` |
+
+#### Nuget
+
+| Name | Description | Category |
+| --- | --- | --- |
+| [.releaserc.nuget.json](./presets/gitlab/.releaserc.nuget.json) | Semantic release configuration for nuget configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `nuget` |
+| [.releaserc.main-nuget.json](./presets/gitlab/.releaserc.main-nuget.json) | Semantic release configuration for nuget configured to run on main branch | `main`, `nuget` |
+| [.releaserc.dev-nuget.json](./presets/gitlab/.releaserc.dev-nuget.json) | Semantic release configuration for nuget configured to run on dev branch | `dev`, `nuget` |
+
+#### Python
+
+| Name | Description | Category |
+| --- | --- | --- |
+| [.releaserc.python.json](./presets/gitlab/.releaserc.python.json) | Semantic release configuration for python configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `python` |
+| [.releaserc.main-python.json](./presets/gitlab/.releaserc.main-python.json) | Semantic release configuration for python configured to run on main branch | `main`, `python` |
+| [.releaserc.dev-python.json](./presets/gitlab/.releaserc.dev-python.json) | Semantic release configuration for python configured to run on dev branch | `dev`, `python` |
+
+#### Swagger
+
+| Name | Description | Category |
+| --- | --- | --- |
+| [.releaserc.swagger.json](./presets/gitlab/.releaserc.swagger.json) | Semantic release configuration with full usage, but without `npm publish`, configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support. An additional step to update the version in a `swagger.yaml` file (in root) is added | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `swagger` |
+| [.releaserc.main-swagger.json](./presets/gitlab/.releaserc.main-swagger.json) | Semantic release configuration with full usage, but without `npm publish`, configured to run on main branch. An additional step to update the version in a `swagger.yaml` file (in root) is added | `main`, `swagger` |
+| [.releaserc.dev-swagger.json](./presets/gitlab/.releaserc.dev-swagger.json) | Semantic release configuration with full usage, but without `npm publish`, configured to run on dev branch. An additional step to update the version in a `swagger.yaml` file (in root) is added | `dev`, `swagger` |
 
 ### Recommendation
 
@@ -85,7 +139,7 @@ Based on your git knowledge and application or package release cycle, different 
 
 #### Package and advanced Git knowledge (rebasing, branching)
 
-If you are an advanced git user with rebasing and branching knowledge and maintain an npm or dotnet package, the configurations [.releaserc.full.json](./presets/.releaserc.full.json) or [.releaserc.nuget.json](./presets/.releaserc.nuget.json) might be beneficial for you.\
+If you are an advanced git user with rebasing and branching knowledge and maintain an npm or dotnet package, the configurations [.releaserc.full.json](./presets/github/.releaserc.full.json) or [.releaserc.nuget.json](./presets/github/.releaserc.nuget.json) might be beneficial for you.\
 They provide support for normal version publishing, pre-releases and maintenance handling.\
 Branches:
 - `main`: normal version publishing
@@ -95,7 +149,7 @@ Branches:
 
 #### Package with basic Git knowledge
 
-If you have basic git knowledge and maintain an npm or dotnet package, the configurations [.releaserc.main-full.json](./presets/.releaserc.main-full.json) or [.releaserc.main-nuget.json](./presets/.releaserc.main-nuget.json) might be beneficial for you.\
+If you have basic git knowledge and maintain an npm or dotnet package, the configurations [.releaserc.main-full.json](./presets/github/.releaserc.main-full.json) or [.releaserc.main-nuget.json](./presets/github/.releaserc.main-nuget.json) might be beneficial for you.\
 They provide support for normal version publishing on branch `main`.
 
 #### Application development
@@ -108,7 +162,7 @@ Most suitable should be the `dev` handling. This means you develop and release o
 Add it to your .releaserc.json:
 ```json
 {
-  "extends": "semantic-release-presets/presets/.releaserc.full.json"
+  "extends": "semantic-release-presets/presets/github/.releaserc.full.json"
 }
 ```
 

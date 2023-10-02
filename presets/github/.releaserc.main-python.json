@@ -1,0 +1,52 @@
+{
+  "branches": [
+    "main"
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    [
+      "semantic-release-replace-plugin",
+      {
+        "replacements": [
+          {
+            "files": [
+              "src/version.py"
+            ],
+            "from": "__version__ = '[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}'",
+            "to": "__version__ = '${nextRelease.version}'",
+            "results": [
+              {
+                "file": "src/version.py",
+                "hasChanged": true,
+                "numMatches": 1,
+                "numReplacements": 1
+              }
+            ],
+            "countMatches": true
+          }
+        ]
+      }
+    ],
+    "@semantic-release/github",
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "package.json",
+          "package-lock.json",
+          "CHANGELOG.md",
+          "src/version.py"
+        ],
+        "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}
