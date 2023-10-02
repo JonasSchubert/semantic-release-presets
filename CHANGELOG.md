@@ -1,3 +1,10 @@
+## 2.0.1 (2023-10-02)
+
+
+### Fix
+
+* **npmrc:** remove strict engines rule ([472231a](https://github.com/JonasSchubert/semantic-release-presets/commit/472231acf6b4f30f39a9b994c1b2fb27e5d69ece))
+
 ## 2.0.0 (2023-10-02)
 
 
