@@ -22,9 +22,14 @@ const getMessageCardSuccessConfig = (pluginConfig) => {
 };
 
 export default async (pluginConfig, context) => {
-  const { env: { HTTP_PROXY, HTTPS_PROXY, NO_PROXY, TEAMS_WEBHOOK_URL }, envCi: { branch }, logger, nextRelease, options } = context;
+  const { env: { HTTP_PROXY, HTTPS_PROXY, NO_PROXY, TEAMS_WEBHOOK_DISABLED, TEAMS_WEBHOOK_URL }, envCi: { branch }, logger, nextRelease, options } = context;
+  if (!TEAMS_WEBHOOK_DISABLED) {
+    logger.log('Microsoft Teams webhook is disabled!');
+    return await Promise.resolve();
+  }
+
   const url = pluginConfig.webhookUrl || TEAMS_WEBHOOK_URL;
-  const repo = getRepoInfo(options.repositoryUrl)
+  const repo = getRepoInfo(options.repositoryUrl);
   const projectName = options.repositoryUrl.split('/').pop().replace('.git', '');
 
   let releaseNotes = nextRelease.notes;

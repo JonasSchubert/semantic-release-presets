@@ -1,8 +1,10 @@
 # Semantic Release Plugin for Microsoft Teams
 
 > Forked from here https://github.com/wagaru/semantic-release-teams and updated.
-
-> Extended with ideas from https://github.com/yllieth/semantic-release-ms-teams .
+>
+> Extended with ideas from https://github.com/yllieth/semantic-release-ms-teams.
+>
+> If you do not want to use the plugin, but still want to use these presets you can set the environment variable `TEAMS_WEBHOOK_DISABLED` to `true`. This will skip the steps.
 
 ## Supported Steps
 
