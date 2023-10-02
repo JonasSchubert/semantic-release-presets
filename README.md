@@ -2,6 +2,8 @@
 
 🔧 Semantic release presets and plugins for various projects.
 
+> This is not in any way connected or related to the official [semantic-release](https://github.com/semantic-release) group and only maintained by [me](https://github.com/JonasSchubert) and optimized for my usage with Gitlab.
+
 ## Usage
 
 Register the package in your package.json as followed:
