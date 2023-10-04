@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/JonasSchubert/semantic-release-presets/compare/v2.0.3...v2.0.4) (2023-10-04)
+
+
+### Bug Fixes
+
+* **ms-teams:** validate whether teams webhook is disabled ([dececc9](https://github.com/JonasSchubert/semantic-release-presets/commit/dececc95850d497747800b68d64471ac42ab4a81))
+
 ## [2.0.3](https://github.com/JonasSchubert/semantic-release-presets/compare/v2.0.2...v2.0.3) (2023-10-04)
 
 
