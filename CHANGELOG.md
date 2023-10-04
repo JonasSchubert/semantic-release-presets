@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/JonasSchubert/semantic-release-presets/compare/v2.0.2...v2.0.3) (2023-10-04)
+
+
+### Bug Fixes
+
+* **npm:** bump dependency versions ([1ddcd16](https://github.com/JonasSchubert/semantic-release-presets/commit/1ddcd16de087ab9de681aa9233b751785368e07d))
+
 ## [2.0.2](https://github.com/JonasSchubert/semantic-release-presets/compare/v2.0.1...v2.0.2) (2023-10-02)
 
 
