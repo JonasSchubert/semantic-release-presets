@@ -21,7 +21,7 @@ const getMessageCardFailConfig = (pluginConfig) => {
 
 export default async (pluginConfig, context) => {
   const { env: { HTTP_PROXY, HTTPS_PROXY, NO_PROXY, TEAMS_WEBHOOK_DISABLED, TEAMS_WEBHOOK_URL }, logger, options } = context;
-  if (!TEAMS_WEBHOOK_DISABLED) {
+  if (!!TEAMS_WEBHOOK_DISABLED) {
     logger.log('Microsoft Teams webhook is disabled!');
     return await Promise.resolve();
   }
