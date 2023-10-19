@@ -22,7 +22,7 @@ jobs:
           cache: npm
           node-version: lts/*
       - run: npm ci
-      - run: npm install semantic-release @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/github @semantic-release/npm @semantic-release/git semantic-release-presets
+      - run: npm install --no-save semantic-release @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/github @semantic-release/npm @semantic-release/git semantic-release-presets
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
