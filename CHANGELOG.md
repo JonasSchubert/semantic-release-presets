@@ -1,3 +1,11 @@
+## [2.0.6](https://github.com/JonasSchubert/semantic-release-presets/compare/v2.0.5...v2.0.6) (2023-11-16)
+
+
+### Bug Fixes
+
+* **engines:** allow additional versions ([9b98fd8](https://github.com/JonasSchubert/semantic-release-presets/commit/9b98fd88bcb32fe43b49eae66b35425364a5849a))
+* **packages:** remove semantic release from dependencies ([3fa2da7](https://github.com/JonasSchubert/semantic-release-presets/commit/3fa2da70620062d66172978163e5d3c6e84e3f91))
+
 ## [2.0.5](https://github.com/JonasSchubert/semantic-release-presets/compare/v2.0.4...v2.0.5) (2023-10-19)
 
 
