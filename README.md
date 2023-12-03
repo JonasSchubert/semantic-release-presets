@@ -53,6 +53,14 @@ Following presets can be used:
 | [.releaserc.main-noNpmPublish.json](./presets/github/.releaserc.main-noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on main branch | `main` |
 | [.releaserc.dev-noNpmPublish.json](./presets/github/.releaserc.dev-noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on dev branch | `dev` |
 
+#### Deno
+
+| Name | Description | Category |
+| --- | --- | --- |
+| [.releaserc.deno.json](./presets/github/.releaserc.deno.json) | Semantic release configuration for deno configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `deno` |
+| [.releaserc.main-deno.json](./presets/github/.releaserc.main-deno.json) | Semantic release configuration for deno configured to run on main branch | `main`, `deno` |
+| [.releaserc.dev-deno.json](./presets/github/.releaserc.dev-deno.json) | Semantic release configuration for deno configured to run on dev branch | `dev`, `deno` |
+
 #### .NET
 
 | Name | Description | Category |
@@ -102,6 +110,14 @@ Following presets can be used:
 | [.releaserc.noNpmPublish.json](./presets/gitlab/.releaserc.noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance` |
 | [.releaserc.main-noNpmPublish.json](./presets/gitlab/.releaserc.main-noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on main branch | `main` |
 | [.releaserc.dev-noNpmPublish.json](./presets/gitlab/.releaserc.dev-noNpmPublish.json) | Semantic release configuration with full usage, but without `npm publish`, to run on dev branch | `dev` |
+
+#### Deno
+
+| Name | Description | Category |
+| --- | --- | --- |
+| [.releaserc.deno.json](./presets/gitlab/.releaserc.deno.json) | Semantic release configuration for deno configured to run on branches [main and dev](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/distribution-channels) as well as `n.x.x` (maintenance) and with [alpha, beta, next](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/pre-releases) and [maintenance](https://semantic-release.gitbook.io/semantic-release/recipes/release-workflow/maintenance-releases) support | `main`, `dev`, `alpha`, `beta`, `next`, `maintenance`, `deno` |
+| [.releaserc.main-deno.json](./presets/gitlab/.releaserc.main-deno.json) | Semantic release configuration for deno configured to run on main branch | `main`, `deno` |
+| [.releaserc.dev-deno.json](./presets/gitlab/.releaserc.dev-deno.json) | Semantic release configuration for deno configured to run on dev branch | `dev`, `deno` |
 
 #### .NET
 
