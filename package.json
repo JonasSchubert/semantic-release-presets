@@ -31,19 +31,19 @@
   "contributors": [],
   "license": "MIT",
   "dependencies": {
-    "got": "^13.0.0",
+    "got": "^14.0.0",
     "hpagent": "^1.2.0",
     "url": "^0.11.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.4.2",
-    "@commitlint/config-conventional": "^18.4.2",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "commitlint-presets": "^1.0.3",
     "husky": "^8.0.3",
     "is-ci": "^3.0.1"
   },
   "engines": {
-    "node": ">=18",
-    "npm": ">=9"
+    "node": ">=20",
+    "npm": ">=10"
   }
 }
