@@ -1,3 +1,20 @@
+# [3.0.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v2.0.6...v3.0.0) (2023-12-03)
+
+
+### chore
+
+* **node:** update dependencies and engines ([3c4c67c](https://github.com/JonasSchubert/semantic-release-presets/commit/3c4c67c42134605800f6774c11103b9fbbc3bed6))
+
+
+### Features
+
+* **presets:** add initial deno config ([be13671](https://github.com/JonasSchubert/semantic-release-presets/commit/be1367126a047201264ed8b9f13f116d6700d7bb))
+
+
+### BREAKING CHANGES
+
+* **node:** required node >=20 and npm >=10, uses got@v14
+
 ## [2.0.6](https://github.com/JonasSchubert/semantic-release-presets/compare/v2.0.5...v2.0.6) (2023-11-16)
 
 
