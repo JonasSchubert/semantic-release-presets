@@ -1,3 +1,22 @@
+# [4.0.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v3.0.0...v4.0.0) (2024-02-01)
+
+
+### Bug Fixes
+
+* **deps:** bump got to 14.1.0 in plugin ms-teams ([b1a6a26](https://github.com/JonasSchubert/semantic-release-presets/commit/b1a6a26dab019c17e8577bc0e8a9ea18533b2386))
+* **deps:** bump got to 14.1.0, bump husky and commitlint ([ca465ad](https://github.com/JonasSchubert/semantic-release-presets/commit/ca465adb15d6504851140aea50a62e44fd6e906f))
+
+
+### Features
+
+* **plugins:** add nuget publish ([448e642](https://github.com/JonasSchubert/semantic-release-presets/commit/448e6421be28a7d7d56a5611164cfad75f52c4d7))
+* **presets:** use nuget plugin in gitlab configurations for nuget ([7ad59ec](https://github.com/JonasSchubert/semantic-release-presets/commit/7ad59ecf4841b60470725edb6afbf7c5a29ea563))
+
+
+### BREAKING CHANGES
+
+* **presets:** requires installed dotnet nuget cli
+
 # [3.0.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v2.0.6...v3.0.0) (2023-12-03)
 
 
