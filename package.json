@@ -45,5 +45,13 @@
   "engines": {
     "node": ">=20",
     "npm": ">=10"
+  },
+  "commitlint": {
+    "extends": [
+      "./node_modules/commitlint-presets/index.js"
+    ]
+  },
+  "release": {
+    "extends": "semantic-release-presets/presets/github/.releaserc.full.json"
   }
 }
