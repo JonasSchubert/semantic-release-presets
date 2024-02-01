@@ -13,7 +13,8 @@
     "semantic-release",
     "semantic-release-plugins",
     "semantic-release-presets",
-    "ms-teams"
+    "ms-teams",
+    "nuget"
   ],
   "homepage": "https://github.com/JonasSchubert/semantic-release-presets",
   "bugs": {

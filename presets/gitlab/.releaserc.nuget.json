@@ -67,6 +67,16 @@
         "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ],
-    "semantic-release-presets/plugins/ms-teams"
+    "semantic-release-presets/plugins/ms-teams",
+    [
+      "semantic-release-presets/plugins/nuget",
+      {
+        "apiKey": "",
+        "configuration": "Release",
+        "packageFilesRegex": "src/bin/Release/*.nupkg",
+        "source": "gitlab",
+        "username": "gitlab-ci-token"
+      }
+    ]
   ]
 }
