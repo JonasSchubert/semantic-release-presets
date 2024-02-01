@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "description": "Semantic release presets and plugins for various projects.",
   "scripts": {
-    "prepare": "is-ci || husky install"
+    "prepare": "is-ci || husky"
   },
   "files": [
     "plugins/*",
@@ -31,15 +31,15 @@
   "contributors": [],
   "license": "MIT",
   "dependencies": {
-    "got": "^14.0.0",
+    "got": "^14.1.0",
     "hpagent": "^1.2.0",
     "url": "^0.11.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.3",
-    "commitlint-presets": "^1.0.3",
-    "husky": "^9.0.6",
+    "@commitlint/cli": "^18.6.0",
+    "@commitlint/config-conventional": "^18.6.0",
+    "commitlint-presets": "^1.0.4",
+    "husky": "^9.0.10",
     "is-ci": "^3.0.1"
   },
   "engines": {
