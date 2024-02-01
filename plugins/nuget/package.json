@@ -1,0 +1,8 @@
+{
+  "name": "semantic-release-presets-plugins-nuget",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": false,
+  "exports": "./index.js",
+  "type": "module"
+}
