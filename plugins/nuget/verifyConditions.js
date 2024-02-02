@@ -1,8 +1,8 @@
+import _ from 'lodash';
 import { execa } from 'execa';
-import { isString } from 'lodash';
 import resolveOptions from './resolve-options.js';
 
-const isNonEmptyString = (value) => isString(value) && value.trim();
+const isNonEmptyString = (value) => _.isString(value) && value.trim();
 
 export default async (options, context) => {
   const resolvedOptions = resolveOptions(options, context);
