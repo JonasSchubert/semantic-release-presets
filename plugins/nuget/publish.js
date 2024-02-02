@@ -6,7 +6,7 @@ export default (options, context) => {
   const resolvedOptions = resolveOptions(options, context);
 
   const args = [
-    `"${resolvedOptions.packageFilesRegex}"`,
+    `${resolvedOptions.packageFilesRegex}`,
     `--source ${resolvedOptions.source}`,
   ];
 
