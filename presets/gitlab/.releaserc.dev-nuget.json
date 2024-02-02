@@ -59,9 +59,11 @@
     [
       "semantic-release-presets/plugins/nuget",
       {
-        "apiKey": "",
+        "apiKey": "${env.CI_JOB_TOKEN}",
         "configuration": "Release",
+        "password": "${env.CI_JOB_TOKEN}",
         "source": "gitlab",
+        "url": "${env.CI_SERVER_URL}/api/v4/projects/${env.CI_PROJECT_ID}/packages/nuget/index.json",
         "username": "gitlab-ci-token"
       }
     ]
