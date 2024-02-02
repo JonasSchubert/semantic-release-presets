@@ -19,7 +19,7 @@ export default async (options, context) => {
     args.push('--api-key', `${resolvedOptions.apiKey}`);
   }
 
-  logger.log(`Pushing '${resolvedOptions.packageFilesRegex}' to ${resolvedOptions.source}.`);
+  logger.log(`Pushing '${resolvedOptions.output}' to ${resolvedOptions.source}.`);
   try {
     await execa('dotnet',
       args,
