@@ -1,3 +1,10 @@
+## [4.0.4](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.0.3...v4.0.4) (2024-02-02)
+
+
+### Bug Fixes
+
+* **nuget:** use execa and optimize error handling ([b880aa0](https://github.com/JonasSchubert/semantic-release-presets/commit/b880aa0fae35b42a3b86a2282f28876f5486a147))
+
 ## [4.0.3](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.0.2...v4.0.3) (2024-02-02)
 
 
