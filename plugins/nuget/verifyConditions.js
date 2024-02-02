@@ -1,10 +1,10 @@
-import { execSync } from 'node:child_process';
+import { execa } from 'execa';
 import { isString } from 'lodash';
 import resolveOptions from './resolve-options.js';
 
 const isNonEmptyString = (value) => isString(value) && value.trim();
 
-export default (options, context) => {
+export default async (options, context) => {
   const resolvedOptions = resolveOptions(options, context);
 
   const errors = [];
@@ -18,7 +18,12 @@ export default (options, context) => {
   }
 
   try {
-    execSync('dotnet nuget --version');
+    await execa('dotnet',
+      [
+        'nuget',
+        '--version'
+      ],
+      { stdio: "inherit" });
   } catch {
     errors.push('Failed to check dotnet version. Is it installed?');
   }
