@@ -6,7 +6,8 @@
   "exports": "./index.js",
   "type": "module",
   "dependencies": {
+    "@semantic-release/error": "4.0.0",
     "execa": "^8.0.1",
-    "@semantic-release/error": "4.0.0"
+    "lodash": "^4.17.21"
   }
 }

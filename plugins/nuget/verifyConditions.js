@@ -1,18 +1,19 @@
 import { execSync } from 'node:child_process';
+import { isString } from 'lodash';
 import resolveOptions from './resolve-options.js';
+
+const isNonEmptyString = (value) => isString(value) && value.trim();
 
 export default (options, context) => {
   const resolvedOptions = resolveOptions(options, context);
 
   const errors = [];
 
-  const isNotSet = (value) => !value || !value.trim().length;
-
-  if (isNotSet(resolvedOptions.configuration)) {
+  if (!isNonEmptyString(resolvedOptions.configuration)) {
     errors.push('The configuration must be set. Default is "Release".')
   }
 
-  if (isNotSet(resolvedOptions.apiKey) && (isNotSet(resolvedOptions.username) || isNotSet(resolvedOptions.password))) {
+  if (!isNonEmptyString(resolvedOptions.apiKey) && (!isNonEmptyString(resolvedOptions.username) || !isNonEmptyString(resolvedOptions.password))) {
     errors.push('Either api key or username and password must be set!');
   }
 

@@ -1,3 +1,7 @@
+import { isString } from 'lodash';
+
+const isNonEmptyString = (value) => isString(value) && value.trim();
+
 /**
  * @param {{ apiKey: string | undefined; configuration: string; output: string; password: string | undefined; source: string | undefined; url: string | undefined; username: string | undefined }} options The plugin options.
  * @param {*} context The semantic release context.
@@ -5,7 +9,7 @@
  */
 export default (options, context) => {
   let { source, url } = options;
-  if ((!url || !url.trim().length) && source === 'gitlab') {
+  if (!isNonEmptyString(url) && source === 'gitlab') {
     url = `${context.env.CI_SERVER_URL}/api/v4/projects/${context.env.CI_PROJECT_ID}/packages/nuget/index.json`;
   }
 
