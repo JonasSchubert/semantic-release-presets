@@ -1,5 +1,5 @@
 import { execSync } from 'node:child_process';
-import resolveOptions from './resolve-options';
+import resolveOptions from './resolve-options.js';
 
 export default (options, context) => {
   const resolvedOptions = resolveOptions(options, context);
