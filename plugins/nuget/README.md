@@ -14,10 +14,10 @@
 
 | Name | Description | Required | Default Value |
 | --- | --- | --- | --- |
-| `apiKey` | Used for authorization to the nuget source. | `no` | ` `|
+| `apiKey` | Used for authorization to the nuget source. Can be templated. | `no` | ` `|
 | `configuration` | The configuration to pack. | `no` | `Release`|
 | `output` | The output dir for the pack. | `no` | `output`|
-| `password` | Used for authorization to the nuget source if `apiKey` does not apply. | `no` | ` `|
-| `source` | The name of the nuget source. | `yes` | ` `|
-| `url` | The url to the nuget source. | `no` | ` `|
-| `username` | Used for authorization to the nuget source if `apiKey` does not apply. | `no` | ` `|
+| `password` | Used for authorization to the nuget source if `apiKey` does not apply. Can be templated. | `no` | ` `|
+| `source` | The name of the nuget source. Can be templated. | `yes` | ` `|
+| `url` | The url to the nuget source. Can be templated. | `no` | ` `|
+| `username` | Used for authorization to the nuget source if `apiKey` does not apply. Can be templated. | `no` | ` `|
