@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.0.2...v4.0.3) (2024-02-02)
+
+
+### Bug Fixes
+
+* **nuget:** add try catch to publish ([11868f2](https://github.com/JonasSchubert/semantic-release-presets/commit/11868f201c7c7072bd48598343e3e1262b29062c))
+
 ## [4.0.2](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.0.1...v4.0.2) (2024-02-02)
 
 
