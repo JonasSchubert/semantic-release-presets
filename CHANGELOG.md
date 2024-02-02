@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.0.0...v4.0.1) (2024-02-02)
+
+
+### Bug Fixes
+
+* **nuget:** add file extension to import path ([dad8408](https://github.com/JonasSchubert/semantic-release-presets/commit/dad84084de8abcabf92370c8ebfe26958b5ddd5b))
+
 # [4.0.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v3.0.0...v4.0.0) (2024-02-01)
 
 
