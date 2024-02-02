@@ -20,7 +20,7 @@ Register the package in your package.json as followed:
 
 ## Plugins
 
-Currently one plugin is added:
+Currently two plugins are added:
 
 ### [MS Teams](./plugins/ms-teams/README.md)
 
@@ -28,6 +28,10 @@ This was forked from https://github.com/wagaru/semantic-release-teams and update
 Furthermore it was extended with ideas from https://github.com/yllieth/semantic-release-ms-teams .
 
 > If you do not want to use this plugin, but still want to use these presets you can set the environment variable `TEAMS_WEBHOOK_DISABLED` to `true`. This will skip the steps.
+
+### [Nuget](./plugins/nuget/README.md)
+
+Inspired by https://github.com/iFaxity/semantic-release-nuget and https://gitlab.com/dmoonfire/semantic-release-nuget.
 
 ## Presets
 
