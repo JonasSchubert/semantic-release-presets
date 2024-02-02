@@ -1,3 +1,17 @@
+# [4.1.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.0.4...v4.1.0) (2024-02-02)
+
+
+### Bug Fixes
+
+* **nuget:** add log message for api key and remove quotes ([84b610d](https://github.com/JonasSchubert/semantic-release-presets/commit/84b610d251b24f51a666aa78c07206a35a842f7b))
+* **nuget:** fix log message ([398c324](https://github.com/JonasSchubert/semantic-release-presets/commit/398c324c6f78716ddf654dddfc105fb0a6005ca0))
+
+
+### Features
+
+* **nuget:** allow templating of some options ([3c516f0](https://github.com/JonasSchubert/semantic-release-presets/commit/3c516f052602e32731cba6ef48d7b31eea3491bc))
+* **presets:** use template syntax for nuget options ([b248358](https://github.com/JonasSchubert/semantic-release-presets/commit/b2483586e1ab919e0895861a6504a5e570cd621f))
+
 ## [4.0.4](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.0.3...v4.0.4) (2024-02-02)
 
 
