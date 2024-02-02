@@ -14,6 +14,14 @@ export default (options, context) => {
     args.push(`--api-key ${resolvedOptions.apiKey}`);
   }
 
-  logger.log(`Pushing '${resolvedOptions.packageFilesRegex}' to ${resolvedOptions.source}.`);
-  execSync(`dotnet nuget push ${args.join(' ')}`);
+  try {
+    logger.log(`Pushing '${resolvedOptions.packageFilesRegex}' to ${resolvedOptions.source}.`);
+    execSync(`dotnet nuget push ${args.join(' ')}`);
+  } catch (error) {
+    if (error && error.stderr) {
+      logger.error(error.stderr.toString().trim());
+    }
+
+    throw new Error(error);
+  }
 };
