@@ -1,7 +1,7 @@
 /**
- * @param {{ apiKey: string | undefined; configuration: string; packageFilesRegex: string; password: string | undefined; source: string | undefined; url: string | undefined; username: string | undefined }} options The plugin options.
+ * @param {{ apiKey: string | undefined; configuration: string; output: string; password: string | undefined; source: string | undefined; url: string | undefined; username: string | undefined }} options The plugin options.
  * @param {*} context The semantic release context.
- * @returns {{ apiKey: string | undefined; configuration: string; packageFilesRegex: string; password: string | undefined; source: string | undefined; url: string | undefined; username: string | undefined }}
+ * @returns {{ apiKey: string | undefined; configuration: string; output: string; password: string | undefined; source: string | undefined; url: string | undefined; username: string | undefined }}
  */
 export default (options, context) => {
   let { source, url } = options;
@@ -12,7 +12,7 @@ export default (options, context) => {
   return {
     apiKey: context.env.GL_TOKEN || context.env.GITLAB_TOKEN || context.env.CI_JOB_TOKEN,
     configuration: 'Release',
-    packageFilesRegex: context.env.NUGET_PACKAGE_FILES || '*.nupkg',
+    output: context.env.NUGET_OUTPUT || 'output',
     password: context.env.GL_TOKEN || context.env.GITLAB_TOKEN || context.env.CI_JOB_TOKEN,
     source: context.env.NUGET_SOURCE,
     url,

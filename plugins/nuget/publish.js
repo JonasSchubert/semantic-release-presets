@@ -1,27 +1,31 @@
-import { execSync } from 'node:child_process';
+import SemanticReleaseError from "@semantic-release/error";
+import { execa } from 'execa';
+import { resolve } from 'path';
 import resolveOptions from './resolve-options.js';
 
-export default (options, context) => {
+export default async (options, context) => {
   const { logger } = context;
   const resolvedOptions = resolveOptions(options, context);
+  const packagePath = resolve(resolvedOptions.output, '*.nupkg');
 
   const args = [
-    `${resolvedOptions.packageFilesRegex}`,
-    `--source ${resolvedOptions.source}`,
+    'nuget',
+    'push',
+    packagePath,
+    '--source', resolvedOptions.source,
   ];
 
   if (resolvedOptions.apiKey) {
-    args.push(`--api-key ${resolvedOptions.apiKey}`);
+    args.push('--api-key', `${resolvedOptions.apiKey}`);
   }
 
+  logger.log(`Pushing '${resolvedOptions.packageFilesRegex}' to ${resolvedOptions.source}.`);
   try {
-    logger.log(`Pushing '${resolvedOptions.packageFilesRegex}' to ${resolvedOptions.source}.`);
-    execSync(`dotnet nuget push ${args.join(' ')}`);
+    await execa('dotnet',
+      args,
+      { stdio: "inherit" });
   } catch (error) {
-    if (error && error.stderr) {
-      logger.error(error.stderr.toString().trim());
-    }
-
-    throw new Error(error);
+    logger.error(error);
+    throw new SemanticReleaseError(`dotnet publish failed with exit code ${error.exitCode}`, 'EDOTNET_PUBLISH_FAILED', error.command);
   }
 };

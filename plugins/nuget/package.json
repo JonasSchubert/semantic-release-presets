@@ -4,5 +4,9 @@
   "license": "MIT",
   "private": false,
   "exports": "./index.js",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "execa": "^8.0.1",
+    "@semantic-release/error": "4.0.0"
+  }
 }
