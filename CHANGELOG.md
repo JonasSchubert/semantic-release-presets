@@ -1,3 +1,10 @@
+## [4.1.1](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.1.0...v4.1.1) (2024-02-02)
+
+
+### Bug Fixes
+
+* **lodash:** use default import ([5aed1e8](https://github.com/JonasSchubert/semantic-release-presets/commit/5aed1e82521206858530772baa41dbaed0defa83))
+
 # [4.1.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.0.4...v4.1.0) (2024-02-02)
 
 
