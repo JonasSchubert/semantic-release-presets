@@ -1,3 +1,11 @@
+## [4.0.2](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.0.1...v4.0.2) (2024-02-02)
+
+
+### Bug Fixes
+
+* **nuget:** add multiple logs ([8874ba4](https://github.com/JonasSchubert/semantic-release-presets/commit/8874ba48e4b90130970969b2bdbbde41d1fee293))
+* **nuget:** remove quotes around packageFilesRegex ([f7523d8](https://github.com/JonasSchubert/semantic-release-presets/commit/f7523d8a52cfda6540103c55b071aa4e22eebecc))
+
 ## [4.0.1](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.0.0...v4.0.1) (2024-02-02)
 
 
