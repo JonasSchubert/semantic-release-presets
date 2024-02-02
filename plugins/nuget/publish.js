@@ -16,7 +16,8 @@ export default async (options, context) => {
   ];
 
   if (resolvedOptions.apiKey) {
-    args.push('--api-key', `${resolvedOptions.apiKey}`);
+    logger.log('Adding API key.');
+    args.push('--api-key', resolvedOptions.apiKey);
   }
 
   logger.log(`Pushing '${resolvedOptions.output}' to ${resolvedOptions.source}.`);
