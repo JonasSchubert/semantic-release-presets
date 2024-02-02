@@ -16,7 +16,7 @@
 | --- | --- | --- | --- |
 | `apiKey` | Used for authorization to the nuget source. | `no` | ` `|
 | `configuration` | The configuration to pack. | `no` | `Release`|
-| `packageFilesRegex` | How to find the nuget package file(s). | `no` | `*.nupkg`|
+| `output` | The output dir for the pack. | `no` | `output`|
 | `password` | Used for authorization to the nuget source if `apiKey` does not apply. | `no` | ` `|
 | `source` | The name of the nuget source. | `yes` | ` `|
 | `url` | The url to the nuget source. | `no` | ` `|
