@@ -1,3 +1,11 @@
+## [4.1.2](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.1.1...v4.1.2) (2024-03-17)
+
+
+### Bug Fixes
+
+* **npm:** bump dependencies ([8b14aff](https://github.com/JonasSchubert/semantic-release-presets/commit/8b14affebd727b220ccbac757d13be6399e82e01))
+* **semantic-release-replace-plugin:** check in all directories for project files ([7b5d14d](https://github.com/JonasSchubert/semantic-release-presets/commit/7b5d14dc9516a90d53bf2bcd5e2c08e62b2e0a9d))
+
 ## [4.1.1](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.1.0...v4.1.1) (2024-02-02)
 
 
