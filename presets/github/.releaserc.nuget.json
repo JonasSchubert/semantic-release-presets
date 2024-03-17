@@ -25,21 +25,21 @@
         "replacements": [
           {
             "files": [
-              "src/*.csproj"
+              "**/*.csproj"
             ],
             "from": "<AssemblyVersion>[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}</AssemblyVersion>",
             "to": "<AssemblyVersion>${nextRelease.version}</AssemblyVersion>"
           },
           {
             "files": [
-              "src/*.csproj"
+              "**/*.csproj"
             ],
             "from": "<FileVersion>[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}</FileVersion>",
             "to": "<FileVersion>${nextRelease.version}</FileVersion>"
           },
           {
             "files": [
-              "src/*.csproj",
+              "**/*.csproj",
               ".nuspec"
             ],
             "from": "<[vV]{1}ersion>[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}</[vV]{1}ersion>",
@@ -62,7 +62,7 @@
           "package-lock.json",
           "CHANGELOG.md",
           ".nuspec",
-          "src/*.csproj"
+          "**/*.csproj"
         ],
         "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
       }
