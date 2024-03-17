@@ -32,15 +32,17 @@
   "contributors": [],
   "license": "MIT",
   "dependencies": {
-    "got": "^14.1.0",
+    "execa": "^8.0.1",
+    "got": "^14.2.1",
     "hpagent": "^1.2.0",
+    "lodash": "^4.17.21",
     "url": "^0.11.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.0.3",
-    "@commitlint/config-conventional": "^19.0.3",
+    "@commitlint/cli": "^19.2.0",
+    "@commitlint/config-conventional": "^19.1.0",
     "commitlint-presets": "^1.0.4",
-    "husky": "^9.0.10",
+    "husky": "^9.0.11",
     "is-ci": "^3.0.1"
   },
   "engines": {
