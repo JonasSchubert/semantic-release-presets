@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/JonasSchubert/semantic-release-presets/compare/v3.0.0...v3.0.1) (2024-04-09)
+
+
+### Bug Fixes
+
+* **gitlab:** add custom tag format without leading v ([deb8833](https://github.com/JonasSchubert/semantic-release-presets/commit/deb88336aeeb0909ab0fb0823f5b495ea525cca2))
+
 # [3.0.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v2.0.6...v3.0.0) (2023-12-03)
 
 
