@@ -1,3 +1,10 @@
+## [4.1.3](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.1.2...v4.1.3) (2024-04-09)
+
+
+### Bug Fixes
+
+* **gitlab:** add custom tag format without leading v ([dbcabf2](https://github.com/JonasSchubert/semantic-release-presets/commit/dbcabf27420f35a05dbc45780f19d2ce511ba97f))
+
 ## [4.1.2](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.1.1...v4.1.2) (2024-03-17)
 
 
