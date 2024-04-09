@@ -4,6 +4,7 @@ name: Release
   push:
     branches:
       - main
+      - 3.x.x
 permissions:
   contents: read
 jobs:
