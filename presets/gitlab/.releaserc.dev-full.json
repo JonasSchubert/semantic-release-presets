@@ -20,5 +20,6 @@
       }
     ],
     "semantic-release-presets/plugins/ms-teams"
-  ]
+  ],
+  "tagFormat": "${version}"
 }

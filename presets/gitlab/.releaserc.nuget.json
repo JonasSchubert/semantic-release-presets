@@ -79,5 +79,6 @@
         "username": "gitlab-ci-token"
       }
     ]
-  ]
+  ],
+  "tagFormat": "${version}"
 }
