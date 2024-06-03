@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.1.4...v4.2.0) (2024-06-03)
+
+
+### Features
+
+* **git:** change commit message to skip the pipeline ([965ff35](https://github.com/JonasSchubert/semantic-release-presets/commit/965ff35ce01c7b415c69d96ceaa34d43f509672f))
+
 ## [4.1.4](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.1.3...v4.1.4) (2024-05-20)
 
 
