@@ -1,3 +1,10 @@
+## [4.2.1](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.2.0...v4.2.1) (2024-06-03)
+
+
+### Bug Fixes
+
+* **npm:** bump dependency versions ([03ac893](https://github.com/JonasSchubert/semantic-release-presets/commit/03ac893d3146647dd68389e0561d5c544c0687bd))
+
 # [4.2.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.1.4...v4.2.0) (2024-06-03)
 
 
