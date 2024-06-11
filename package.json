@@ -13,6 +13,7 @@
     "semantic-release",
     "semantic-release-plugins",
     "semantic-release-presets",
+    "custom-changelog",
     "ms-teams",
     "nuget"
   ],

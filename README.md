@@ -33,6 +33,12 @@ Furthermore it was extended with ideas from https://github.com/yllieth/semantic-
 
 Inspired by https://github.com/iFaxity/semantic-release-nuget and https://gitlab.com/dmoonfire/semantic-release-nuget.
 
+### [Custom changelog](./plugins/custom-changelog/README.md)
+
+This is very specific for my own requirements. By default this is switched off.
+
+> If you do want to use the plugin, you have to set the environment variable `CUSTOM_CHANGELOG_ENABLED` to `true`.
+
 ## Presets
 
 > These presets make certain assumptions regarding your project setup. Please check them carefully if they apply to your workflows. If they do not match 100% you still can get some inspiration and adjust your configuration to your needs.
