@@ -1,3 +1,10 @@
+## [4.3.1](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.3.0...v4.3.1) (2024-06-11)
+
+
+### Bug Fixes
+
+* **custom-changelog:** fix import of cjs lodash ([cf044b4](https://github.com/JonasSchubert/semantic-release-presets/commit/cf044b4fc35a91342f23628fe13607ff62ad8811))
+
 # [4.3.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.2.1...v4.3.0) (2024-06-11)
 
 
