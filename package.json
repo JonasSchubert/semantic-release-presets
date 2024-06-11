@@ -32,8 +32,8 @@
   "contributors": [],
   "license": "MIT",
   "dependencies": {
-    "execa": "^9.1.0",
-    "got": "^14.3.0",
+    "execa": "^9.2.0",
+    "got": "^14.4.1",
     "hpagent": "^1.2.0",
     "lodash": "^4.17.21",
     "url": "^0.11.3"
