@@ -1,3 +1,16 @@
+# [4.3.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.2.1...v4.3.0) (2024-06-11)
+
+
+### Bug Fixes
+
+* **npm:** bump dependency versions ([b4bbd1a](https://github.com/JonasSchubert/semantic-release-presets/commit/b4bbd1a36569e554d99dc62a14227c4f2d1bb3fe))
+
+
+### Features
+
+* **plugins:** add initial version for custom changelog ([1ddf9ce](https://github.com/JonasSchubert/semantic-release-presets/commit/1ddf9ce14bd8ab4671f1d603e7fd8947aedf459a))
+* **presets:** add custom changelog to no npm publish configurations ([4a6f5ea](https://github.com/JonasSchubert/semantic-release-presets/commit/4a6f5eafcf70aad9bd82f1083af48a58be7e9998))
+
 ## [4.2.1](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.2.0...v4.2.1) (2024-06-03)
 
 
