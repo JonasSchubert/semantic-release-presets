@@ -11,6 +11,8 @@ export default async (options, context) => {
   const { CUSTOM_CHANGELOG_ENABLED } = env;
   const { customChangelog, fileType } = options;
 
+  const errors = [];
+
   if (CUSTOM_CHANGELOG_ENABLED === 'true' && !fs.existsSync(path.resolve(customChangelog))) {
     errors.push('Custom changelog file does not exist!');
   }
