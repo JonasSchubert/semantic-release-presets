@@ -1,3 +1,10 @@
+## [4.3.2](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.3.1...v4.3.2) (2024-06-12)
+
+
+### Bug Fixes
+
+* **custom-changelog:** initialize errors ([d3985fb](https://github.com/JonasSchubert/semantic-release-presets/commit/d3985fb4b40f735ffbffecc8227065483cba5b03))
+
 ## [4.3.1](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.3.0...v4.3.1) (2024-06-11)
 
 
