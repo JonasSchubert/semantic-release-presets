@@ -1,3 +1,10 @@
+## [4.3.3](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.3.2...v4.3.3) (2024-06-20)
+
+
+### Bug Fixes
+
+* **git:** revert change commit message to no longer skip the pipeline ([314a947](https://github.com/JonasSchubert/semantic-release-presets/commit/314a947848b6c04aea7384b6a506af06b9bdeae3))
+
 ## [4.3.2](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.3.1...v4.3.2) (2024-06-12)
 
 
