@@ -1,3 +1,11 @@
+## [4.3.4](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.3.3...v4.3.4) (2024-08-01)
+
+
+### Bug Fixes
+
+* **deps:** bump execa from 9.2.0 to 9.3.0 ([#27](https://github.com/JonasSchubert/semantic-release-presets/issues/27)) ([2f5cc67](https://github.com/JonasSchubert/semantic-release-presets/commit/2f5cc675caf213a89c70dc3cf540bffab47e0858))
+* **deps:** bump got from 14.4.1 to 14.4.2 ([#29](https://github.com/JonasSchubert/semantic-release-presets/issues/29)) ([6d9acff](https://github.com/JonasSchubert/semantic-release-presets/commit/6d9acff6a725270bbaf0470122234c42b12c8633))
+
 ## [4.3.3](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.3.2...v4.3.3) (2024-06-20)
 
 
