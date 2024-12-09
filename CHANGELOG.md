@@ -1,3 +1,22 @@
+# [5.0.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.3.4...v5.0.0) (2024-12-09)
+
+
+### Bug Fixes
+
+* **npm:** bump dependency versions ([14572f6](https://github.com/JonasSchubert/semantic-release-presets/commit/14572f629e8359e35dea086d386e45525df5a63c))
+
+
+### Code Refactoring
+
+* **packages:** replace got with ky ([d0104c5](https://github.com/JonasSchubert/semantic-release-presets/commit/d0104c53c299a2087c6c3a2e9d3f5e6d2dca54cb))
+* **packages:** replace lodash with es-toolkit ([38216c1](https://github.com/JonasSchubert/semantic-release-presets/commit/38216c11140188635d6c2764eab855b0bf90cbdc))
+
+
+### BREAKING CHANGES
+
+* **packages:** replace got with ky
+* **packages:** replace lodash with es-toolkit
+
 ## [4.3.4](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.3.3...v4.3.4) (2024-08-01)
 
 
