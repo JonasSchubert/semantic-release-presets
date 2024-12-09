@@ -1,5 +1,5 @@
-import got from 'got';
-import getGotConfig from './get-got-config.js';
+import ky from 'ky';
+import getKyConfig from './get-ky-config.js';
 import getMessageCard from './get-message-card.js';
 import getRepoInfo from './get-repo-info.js';
 
@@ -66,8 +66,8 @@ export default async (pluginConfig, context) => {
     title: projectName
   });
 
-  await got.post(url, {
-    ...getGotConfig(url, HTTP_PROXY, HTTPS_PROXY, NO_PROXY),
+  await ky.post(url, {
+    ...getKyConfig(url, HTTP_PROXY, HTTPS_PROXY, NO_PROXY),
     json: messageCard
   })
     .then(() => logger.log('Message sent to Microsoft Teams'))

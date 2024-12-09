@@ -100,8 +100,8 @@ const getProxyConfiguration = (url, HTTP_PROXY, HTTPS_PROXY, NO_PROXY) => {
 }
 
 /**
- * Gets the got configuration.
- * @returns {*} The got configuration.
+ * Gets the ky configuration.
+ * @returns {*} The ky configuration.
  */
 export default (url, HTTP_PROXY, HTTPS_PROXY, NO_PROXY) => {
   const headers = { 'Content-Type': 'application/json' };
