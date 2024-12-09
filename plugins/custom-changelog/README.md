@@ -17,5 +17,5 @@
 | --- | --- | --- | --- |
 | `customChangelog` | The path to the custom changelog file. | `yes` | `changelog.json`|
 | `fileType` | The supported file type. | `yes` | `json`|
-| `filter` | The filter to evaluate which commits shall be added to the custom changelog. Use a lodash template. | `yes` | `<% if (body?.startsWith('CUSTOM CHANGELOG:')) { body.replace('CUSTOM CHANGELOG:') } %>`|
+| `filter` | The filter to evaluate which commits shall be added to the custom changelog. Use a [es-toolkit template](https://es-toolkit.slash.page/reference/compat/string/template.html#template). | `yes` | `<% if (body?.startsWith('CUSTOM CHANGELOG:')) { body.replace('CUSTOM CHANGELOG:') } %>`|
 | `locale` | The locale is used to format the date for the custom changelog entry. | `yes` | `de`|

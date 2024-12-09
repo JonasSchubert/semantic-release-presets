@@ -2,7 +2,7 @@ import SemanticReleaseError from '@semantic-release/error';
 import fs from 'node:fs';
 import path from 'node:path';
 import resolveOptions from './resolve-options.js';
-import _ from 'lodash';
+import { template } from 'es-toolkit/compat';
 
 export default async (options, context) => {
   const { commits, env: { CUSTOM_CHANGELOG_ENABLED }, logger } = context;
@@ -18,7 +18,7 @@ export default async (options, context) => {
       // Format to expected format
       .map((commit) => ({
         date: new Date(commit.committerDate).toLocaleDateString(locale),
-        description: [_.template(filter)(commit)]
+        description: [template(filter)(commit)]
       }))
       // Remove empty descriptions
       .filter(({ description }) => !!description[0])
