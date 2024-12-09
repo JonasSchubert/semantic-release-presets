@@ -44,7 +44,7 @@
     "@commitlint/config-conventional": "^19.2.2",
     "commitlint-presets": "^1.0.5",
     "husky": "^9.0.11",
-    "is-ci": "^3.0.1"
+    "is-ci": "^4.1.0"
   },
   "engines": {
     "node": ">=20",
