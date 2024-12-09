@@ -6,8 +6,8 @@
   "exports": "./index.js",
   "type": "module",
   "dependencies": {
-    "got": "^14.4.1",
+    "got": "^14.4.5",
     "hpagent": "^1.2.0",
-    "url": "^0.11.3"
+    "url": "^0.11.4"
   }
 }

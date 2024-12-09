@@ -7,7 +7,7 @@
   "type": "module",
   "dependencies": {
     "@semantic-release/error": "4.0.0",
-    "execa": "^9.2.0",
+    "execa": "^9.5.2",
     "lodash": "^4.17.21"
   }
 }
