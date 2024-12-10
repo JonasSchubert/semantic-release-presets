@@ -1,5 +1,5 @@
+import { EnvHttpProxyAgent } from 'undici';
 import ky from 'ky';
-import getKyConfig from './get-ky-config.js';
 import getMessageCard from './get-message-card.js';
 import getRepoInfo from './get-repo-info.js';
 
@@ -20,7 +20,7 @@ const getMessageCardFailConfig = (pluginConfig) => {
 };
 
 export default async (pluginConfig, context) => {
-  const { env: { HTTP_PROXY, HTTPS_PROXY, NO_PROXY, TEAMS_WEBHOOK_DISABLED, TEAMS_WEBHOOK_URL }, logger, options } = context;
+  const { env: { TEAMS_WEBHOOK_DISABLED, TEAMS_WEBHOOK_URL }, logger, options } = context;
   if (!!TEAMS_WEBHOOK_DISABLED) {
     logger.log('Microsoft Teams webhook is disabled!');
     return await Promise.resolve();
@@ -48,10 +48,12 @@ export default async (pluginConfig, context) => {
     title: projectName
   });
 
-  await ky.post(url, {
-    ...getKyConfig(url, HTTP_PROXY, HTTPS_PROXY, NO_PROXY),
-    json: messageCard
-  })
+  await ky
+    .extend({ dispatcher: new EnvHttpProxyAgent() })
+    .post(url, {
+      headers: { 'Content-Type': 'application/json' },
+      json: messageCard
+    })
     .then(() => logger.log('Message sent to Microsoft Teams'))
     .catch((error) => logger.error('An error occurred while sending the message to Microsoft Teams', error));
 };
