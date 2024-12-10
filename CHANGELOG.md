@@ -1,3 +1,10 @@
+## [5.0.1](https://github.com/JonasSchubert/semantic-release-presets/compare/v5.0.0...v5.0.1) (2024-12-10)
+
+
+### Bug Fixes
+
+* **ms-teams:** use undici experimental EnvHttpProxyAgent for proxies ([44e2811](https://github.com/JonasSchubert/semantic-release-presets/commit/44e28119fd32dc211acadf3d5030d53b708ecd7b)), closes [/github.com/sindresorhus/ky/issues/526#issuecomment-2390430300](https://github.com//github.com/sindresorhus/ky/issues/526/issues/issuecomment-2390430300)
+
 # [5.0.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v4.3.4...v5.0.0) (2024-12-09)
 
 
