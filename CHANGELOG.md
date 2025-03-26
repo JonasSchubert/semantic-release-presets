@@ -1,3 +1,10 @@
+## [5.0.2](https://github.com/JonasSchubert/semantic-release-presets/compare/v5.0.1...v5.0.2) (2025-03-26)
+
+
+### Bug Fixes
+
+* **npm:** bump dependency and engine versions ([3be781e](https://github.com/JonasSchubert/semantic-release-presets/commit/3be781ee1c054446062ab7c9fd543f8cc9074666))
+
 ## [5.0.1](https://github.com/JonasSchubert/semantic-release-presets/compare/v5.0.0...v5.0.1) (2024-12-10)
 
 
