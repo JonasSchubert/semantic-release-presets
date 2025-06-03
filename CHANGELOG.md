@@ -1,3 +1,16 @@
+# [5.1.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v5.0.2...v5.1.0) (2025-06-03)
+
+
+### Bug Fixes
+
+* **deps:** :arrow_up: bump versions ([053ad3c](https://github.com/JonasSchubert/semantic-release-presets/commit/053ad3c90e4d5b3fa472bf0c9c9ebfe8d8789c54))
+
+
+### Features
+
+* **commit-message:** :wrench: use gitmoji.dev in commit message ([598d7c1](https://github.com/JonasSchubert/semantic-release-presets/commit/598d7c1999a36caaf14a8888c47ef3a2ef373223))
+* **ms-teams:** :lipstick: use new images in card ([b7b3ce8](https://github.com/JonasSchubert/semantic-release-presets/commit/b7b3ce8a9d9d62a65e4cb6c4fdd9269663b8430c))
+
 ## [5.0.2](https://github.com/JonasSchubert/semantic-release-presets/compare/v5.0.1...v5.0.2) (2025-03-26)
 
 
