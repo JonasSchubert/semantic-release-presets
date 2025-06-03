@@ -52,7 +52,7 @@
           "CHANGELOG.md",
           "src/version.json"
         ],
-        "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+        "message": "chore(release): :bookmark: ${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ],
     "semantic-release-presets/plugins/ms-teams"
