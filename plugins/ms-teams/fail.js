@@ -9,7 +9,7 @@ const getMessageCardFailConfig = (pluginConfig) => {
     : pluginConfig.fail.activityTitle;
 
   const image = !pluginConfig.fail || !pluginConfig.fail.image
-    ? 'https://img.icons8.com/material/452/warning-shield.png'
+    ? 'https://img.icons8.com/material/452/explosion.png'
     : pluginConfig.fail.image;
 
   const themeColor = !pluginConfig.fail || !pluginConfig.fail.themeColor

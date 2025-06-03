@@ -11,7 +11,7 @@ const getMessageCardSuccessConfig = (pluginConfig) => {
     : pluginConfig.success.activityTitle;
 
   const image = !pluginConfig.success || !pluginConfig.success.image
-    ? 'https://img.icons8.com/material/344/info--v1.png'
+    ? 'https://img.icons8.com/material/452/rocket.png'
     : pluginConfig.success.image;
 
   const themeColor = !pluginConfig.success || pluginConfig.success.themeColor
