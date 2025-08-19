@@ -7,6 +7,6 @@
   "type": "module",
   "dependencies": {
     "@semantic-release/error": "^4.0.0",
-    "es-toolkit": "^1.38.0"
+    "es-toolkit": "^1.39.10"
   }
 }

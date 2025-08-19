@@ -33,21 +33,21 @@
   "contributors": [],
   "license": "MIT",
   "dependencies": {
-    "es-toolkit": "^1.38.0",
+    "es-toolkit": "^1.39.10",
     "execa": "^9.6.0",
-    "ky": "^1.8.1",
-    "undici": "^7.10.0",
+    "ky": "^1.8.2",
+    "undici": "^7.14.0",
     "url": "^0.11.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "commitlint-presets": "^2.1.0",
+    "commitlint-presets": "^2.1.1",
     "husky": "^9.1.7",
     "is-ci": "^4.1.0"
   },
   "engines": {
-    "node": "^22.16.0 || ^24.1.0",
+    "node": "^22.16.0 || ^23.5.0 || ^24.1.0",
     "npm": "^10.9.2 || ^11.4.1",
     "vscode": "^1.100.2"
   },
