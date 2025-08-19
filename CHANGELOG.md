@@ -1,3 +1,10 @@
+## [5.1.1](https://github.com/JonasSchubert/semantic-release-presets/compare/v5.1.0...v5.1.1) (2025-08-19)
+
+
+### Bug Fixes
+
+* **deps:** :arrow_up: bump versions ([1d579ed](https://github.com/JonasSchubert/semantic-release-presets/commit/1d579ed45156f0d3cc16a14333e1633cf9a60bcb))
+
 # [5.1.0](https://github.com/JonasSchubert/semantic-release-presets/compare/v5.0.2...v5.1.0) (2025-06-03)
 
 
